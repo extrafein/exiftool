@@ -12,6 +12,6 @@ RUN apk update
 
 RUN apk add --no-cache exiftool
 
-COPY --from=gitsource /app/arg_files /usr/local/share/exiftool/arg_files
+COPY --from=gitsource /app/arg_files /usr/local/bin
 
 WORKDIR /tmp
